@@ -1,5 +1,4 @@
 #!/bin/sh
+nohup ./app &
 
-nohup cloudflared tunnel --url http://localhost:8080 &
-
-./app
+cloudflared tunnel --url http://localhost:8080
