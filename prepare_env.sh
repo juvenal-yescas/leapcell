@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cat /etc/os-release
+
 apk add curl
 
 curl -L https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 -o /usr/bin/cloudflared
